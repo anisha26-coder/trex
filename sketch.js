@@ -14,6 +14,7 @@ var gameOver, restart;
 
 localStorage["HighestScore"] = 0;
 
+//This will be loaded at the start of the program
 function preload(){
   trex_running =   loadAnimation("trex1.png","trex3.png","trex4.png");
   trex_collided = loadAnimation("trex_collided.png");
@@ -21,6 +22,7 @@ function preload(){
   groundImage = loadImage("ground2.png");
   
   cloudImage = loadImage("cloud.png");
+   cloudImage = loadImage("cloud.png");
   
   obstacle1 = loadImage("obstacle1.png");
   obstacle2 = loadImage("obstacle2.png");
@@ -35,6 +37,7 @@ function preload(){
 
 function setup() {
   createCanvas(600, 200);
+    createCanvas(600, 200);
   
   trex = createSprite(50,180,20,50);
   
